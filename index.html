@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZAVMERIN | Creative Templates</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <img src="./logo.png" alt="ZAVMERIN">
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#templates">Templates</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ZAVMERIN CREATIVE STUDIO
+                </p>
+
+                <h1>
+                    Make Your Ideas
+                    <br>
+                    Look Valuable.
+                </h1>
+
+                <p class="hero-description">
+                    Premium editable templates designed
+                    for modern brands, creators and
+                    ambitious ideas.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#templates"
+                        class="hero-button"
+                    >
+                        Explore Templates
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="hero-button secondary"
+                    >
+                        Discover ZAVMERIN
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TEMPLATES
+        ========================== -->
+
+        <section
+            class="templates-section"
+            id="templates"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        THE COLLECTION
+                    </p>
+
+                    <h2>
+                        Templates
+                    </h2>
+
+                </div>
+
+                <p class="section-intro">
+                    Designed to help your ideas look as strong as they feel.
+                </p>
+
+            </div>
+
+
+
+            <!-- FILTERS -->
+
+            <div class="template-filters">
+
+                <button
+                    class="filter-button active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="editorial"
+                >
+                    Editorial
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="business"
+                >
+                    Business
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="campaigns"
+                >
+                    Campaigns
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="social-media"
+                >
+                    Social Media
+                </button>
+
+            </div>
+
+
+
+            <p
+                id="filter-status"
+                class="filter-status"
+            >
+                Showing all templates
+            </p>
+
+
+
+            <!-- =========================
+                 TEMPLATE GRID
+            ========================== -->
+
+            <div class="template-grid" id="template-grid">
+
+                <!-- Templates will appear here -->
+
+            </div>
+
+
+
+            <div class="view-all-wrapper">
+
+                <button
+                    id="view-all-button"
+                    class="view-all-button"
+                >
+                    View All Templates
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+        <section
+            class="categories-section"
+            id="categories"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        EXPLORE BY STYLE
+                    </p>
+
+                    <h2>
+                        Categories
+                    </h2>
+
+                </div>
+
+                <p class="section-intro">
+                    Find a visual direction that fits your idea.
+                </p>
+
+            </div>
+
+
+
+            <div class="categories-grid">
+
+
+                <article
+                    class="category-card"
+                    data-filter="editorial"
+                >
+
+                    <div class="category-number">
+                        01
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>
+                            Editorial
+                        </h3>
+
+                        <p>
+                            Refined layouts inspired by
+                            modern fashion, magazines
+                            and visual storytelling.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </article>
+
+
+
+                <article
+                    class="category-card"
+                    data-filter="business"
+                >
+
+                    <div class="category-number">
+                        02
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>
+                            Business
+                        </h3>
+
+                        <p>
+                            Professional designs created
+                            for brands, ideas and
+                            ambitious projects.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </article>
+
+
+
+                <article
+                    class="category-card"
+                    data-filter="campaigns"
+                >
+
+                    <div class="category-number">
+                        03
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>
+                            Campaigns
+                        </h3>
+
+                        <p>
+                            Bold visual concepts made
+                            for launches, campaigns
+                            and powerful messages.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </article>
+
+
+
+                <article
+                    class="category-card"
+                    data-filter="social-media"
+                >
+
+                    <div class="category-number">
+                        04
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>
+                            Social Media
+                        </h3>
+
+                        <p>
+                            Modern templates designed
+                            to make your content
+                            stand out online.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             WHY ZAVMERIN
+        ========================== -->
+
+        <section
+            class="why-section"
+            id="why"
+        >
+
+            <div class="why-content">
+
+                <div class="why-heading">
+
+                    <p class="eyebrow">
+                        WHY ZAVMERIN
+                    </p>
+
+                    <h2>
+                        Design with
+                        <br>
+                        intention.
+                    </h2>
+
+                </div>
+
+
+
+                <div class="why-points">
+
+
+                    <div class="why-point">
+
+                        <span>01</span>
+
+                        <div>
+
+                            <h3>
+                                Designed to stand out
+                            </h3>
+
+                            <p>
+                                Every template is built
+                                around strong composition,
+                                typography and visual balance.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="why-point">
+
+                        <span>02</span>
+
+                        <div>
+
+                            <h3>
+                                Easy to customize
+                            </h3>
+
+                            <p>
+                                Change the text, images
+                                and details to make
+                                every design your own.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="why-point">
+
+                        <span>03</span>
+
+                        <div>
+
+                            <h3>
+                                Made for modern ideas
+                            </h3>
+
+                            <p>
+                                From campaigns to creative
+                                projects, ZAVMERIN is built
+                                for ideas that deserve attention.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             COMING SOON
+        ========================== -->
+
+        <section
+            class="coming-soon-section"
+            id="coming-soon"
+        >
+
+            <div class="coming-soon-content">
+
+                <p class="eyebrow">
+                    COMING SOON
+                </p>
+
+                <h2>
+                    More ideas are
+                    <br>
+                    on the way.
+                </h2>
+
+                <p>
+                    New templates, visual concepts
+                    and creative resources are
+                    coming to ZAVMERIN.
+                </p>
+
+                <span class="coming-soon-line">
+                    STAY CURIOUS
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    ABOUT ZAVMERIN
+                </p>
+
+                <h2>
+                    Created for ideas
+                    <br>
+                    worth noticing.
+                </h2>
+
+                <div class="about-text">
+
+                    <p>
+                        ZAVMERIN is a creative template
+                        studio focused on making modern,
+                        expressive and useful designs.
+                    </p>
+
+                    <p>
+                        Every template is created to give
+                        your ideas a strong visual identity
+                        without making the design difficult
+                        to customize.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section
+            class="contact-section"
+            id="contact"
+        >
+
+            <div class="contact-content">
+
+                <p class="eyebrow">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Have an idea?
+                </h2>
+
+                <p>
+                    Let's create something
+                    worth looking at.
+                </p>
+
+                <a
+                    href="mailto:hello@zavmerin.com"
+                    class="contact-button"
+                >
+                    Contact ZAVMERIN
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-logo">
+                ZAVMERIN
+            </div>
+
+            <p>
+                © 2026 ZAVMERIN. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         TEMPLATE DATA
+    ========================== -->
+
+    <script src="./templates.js"></script>
+
+
+    <!-- =========================
+         WEBSITE SCRIPT
+    ========================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* =========================
+                   TEMPLATE DATA
+                ========================= */
+
+                const fallbackTemplates = [
+
+                    {
+                        id: 1,
+                        image: "template1.png",
+                        number: "TEMPLATE 01",
+                        title: "The New Edit",
+                        category: "editorial",
+                        description:
+                            "Editorial-inspired design created for modern creative projects and visual storytelling.",
+                        badge: "NEW"
+                    },
+
+                    {
+                        id: 2,
+                        image: "template2.png",
+                        number: "TEMPLATE 02",
+                        title: "The Price of Freedom",
+                        category: "campaigns",
+                        description:
+                            "A bold conceptual campaign poster designed for powerful visual communication.",
+                        badge: "NEW"
+                    },
+
+                    {
+                        id: 3,
+                        image: "template3.png",
+                        number: "TEMPLATE 03",
+                        title: "ZAVMERIN Editorial",
+                        category: "editorial",
+                        description:
+                            "A premium creative poster designed for modern brands, campaigns and visual projects.",
+                        badge: "NEW"
+                    }
+
+                ];
+
+
+                const templateData =
+                    window.zavmerinTemplates &&
+                    window.zavmerinTemplates.length
+                        ? window.zavmerinTemplates
+                        : fallbackTemplates;
+
+
+
+                /* =========================
+                   TEMPLATE GRID
+                ========================= */
+
+                const grid =
+                    document.getElementById(
+                        "template-grid"
+                    );
+
+
+                if (!grid) {
+                    return;
+                }
+
+
+                grid.innerHTML = "";
+
+
+                templateData.forEach(
+                    function (template) {
+
+
+                        const card =
+                            document.createElement(
+                                "article"
+                            );
+
+
+                        card.className =
+                            "template-card";
+
+
+                        card.dataset.category =
+                            template.category;
+
+
+                        card.style.opacity = "1";
+
+
+                        card.innerHTML = `
+
+                            <div class="template-image">
+
+                                ${
+                                    template.badge
+                                        ? `
+                                            <span class="template-badge">
+                                                ${template.badge}
+                                            </span>
+                                          `
+                                        : ""
+                                }
+
+                                <img
+                                    src="./${template.image}"
+                                    alt="${template.title} template"
+                                    onerror="this.style.display='none';"
+                                >
+
+                            </div>
+
+
+                            <div class="template-info">
+
+                                <p class="template-number">
+                                    ${template.number}
+                                </p>
+
+                                <h3>
+                                    ${template.title}
+                                </h3>
+
+                                <p>
+                                    ${template.description}
+                                </p>
+
+                                <a
+                                    href="product.html?template=${template.id}"
+                                    class="template-button"
+                                >
+                                    View Template →
+                                </a>
+
+                            </div>
+
+                        `;
+
+
+                        grid.appendChild(card);
+
+                    }
+                );
+
+
+
+                /* =========================
+                   FILTERS
+                ========================= */
+
+                const buttons =
+                    document.querySelectorAll(
+                        ".filter-button"
+                    );
+
+
+                const status =
+                    document.getElementById(
+                        "filter-status"
+                    );
+
+
+                const cards =
+                    document.querySelectorAll(
+                        ".template-card"
+                    );
+
+
+                function filterTemplates(
+                    category
+                ) {
+
+                    cards.forEach(
+                        function (card) {
+
+                            if (
+                                category === "all" ||
+                                card.dataset.category === category
+                            ) {
+
+                                card.style.display =
+                                    "";
+
+                            } else {
+
+                                card.style.display =
+                                    "none";
+
+                            }
+
+                        }
+                    );
+
+
+                    buttons.forEach(
+                        function (button) {
+
+                            button.classList.toggle(
+                                "active",
+                                button.dataset.filter === category
+                            );
+
+                        }
+                    );
+
+
+                    if (status) {
+
+                        status.textContent =
+                            category === "all"
+                                ? "Showing all templates"
+                                : "Showing " +
+                                  category +
+                                  " templates";
+
+                    }
+
+                }
+
+
+
+                buttons.forEach(
+                    function (button) {
+
+                        button.addEventListener(
+                            "click",
+                            function () {
+
+                                filterTemplates(
+                                    button.dataset.filter
+                                );
+
+                            }
+                        );
+
+                    }
+                );
+
+
+
+                /* =========================
+                   CATEGORY CARDS
+                ========================= */
+
+                const categoryCards =
+                    document.querySelectorAll(
+                        ".category-card"
+                    );
+
+
+                categoryCards.forEach(
+                    function (card) {
+
+                        card.addEventListener(
+                            "click",
+                            function () {
+
+                                const category =
+                                    card.dataset.filter;
+
+
+                                filterTemplates(
+                                    category
+                                );
+
+
+                                const templatesSection =
+                                    document.getElementById(
+                                        "templates"
+                                    );
+
+
+                                if (
+                                    templatesSection
+                                ) {
+
+                                    templatesSection.scrollIntoView({
+                                        behavior: "smooth",
+                                        block: "start"
+                                    });
+
+                                }
+
+                            }
+                        );
+
+                    }
+                );
+
+
+
+                /* =========================
+                   VIEW ALL
+                ========================= */
+
+                const viewAll =
+                    document.getElementById(
+                        "view-all-button"
+                    );
+
+
+                if (viewAll) {
+
+                    viewAll.addEventListener(
+                        "click",
+                        function () {
+
+                            filterTemplates(
+                                "all"
+                            );
+
+                        }
+                    );
+
+                }
+
+
+
+                /* =========================
+                   INITIAL
+                ========================= */
+
+                filterTemplates("all");
+
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

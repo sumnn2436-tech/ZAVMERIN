@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZAVMERIN | Template</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="ZAVMERIN">
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#templates">
+                    Templates
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         PRODUCT PAGE
+    ========================== -->
+
+    <main class="product-page">
+
+        <div class="product-layout">
+
+
+            <!-- PRODUCT IMAGE -->
+
+            <div class="product-image-box">
+
+                <img
+                    id="product-image"
+                    src="./template1.png"
+                    alt="ZAVMERIN template"
+                >
+
+            </div>
+
+
+
+            <!-- PRODUCT DETAILS -->
+
+            <div class="product-details">
+
+                <p
+                    class="small-heading"
+                    id="product-number"
+                >
+                    TEMPLATE 01
+                </p>
+
+
+                <h1 id="product-title">
+                    The New Edit
+                </h1>
+
+
+                <p
+                    class="product-description"
+                    id="product-description"
+                >
+                    Editorial-inspired design created
+                    for modern creative projects and
+                    visual storytelling.
+                </p>
+
+
+                <a
+                    id="get-template-button"
+                    class="buy-button"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open Canva Template
+                </a>
+
+
+                <p class="template-note">
+                    Edit the template directly in Canva
+                    and customize it for your own project.
+                </p>
+
+
+                <a
+                    href="index.html#templates"
+                    class="back-button"
+                >
+                    ← Back to Templates
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ZAVMERIN
+        </div>
+
+        <p>
+            © 2026 ZAVMERIN. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         TEMPLATE DATA
+    ========================== -->
+
+    <script src="./templates.js"></script>
+
+
+    <!-- =========================
+         PRODUCT PAGE SCRIPT
+    ========================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* =========================
+                   GET TEMPLATE NUMBER
+                ========================= */
+
+                const params =
+                    new URLSearchParams(
+                        window.location.search
+                    );
+
+
+                const templateNumber =
+                    params.get("template") || "1";
+
+
+                /* =========================
+                   GET TEMPLATE DATA
+                ========================= */
+
+                const templateData =
+                    window.zavmerinTemplates || [];
+
+
+                const product =
+                    templateData.find(
+                        function (template) {
+
+                            return String(template.id) ===
+                                   String(templateNumber);
+
+                        }
+                    );
+
+
+                /* =========================
+                   ELEMENTS
+                ========================= */
+
+                const image =
+                    document.getElementById(
+                        "product-image"
+                    );
+
+                const number =
+                    document.getElementById(
+                        "product-number"
+                    );
+
+                const title =
+                    document.getElementById(
+                        "product-title"
+                    );
+
+                const description =
+                    document.getElementById(
+                        "product-description"
+                    );
+
+                const button =
+                    document.getElementById(
+                        "get-template-button"
+                    );
+
+
+                /* =========================
+                   LOAD TEMPLATE
+                ========================= */
+
+                if (product) {
+
+
+                    image.src =
+                        "./" + product.image;
+
+
+                    image.alt =
+                        product.title;
+
+
+                    number.textContent =
+                        product.number;
+
+
+                    title.textContent =
+                        product.title;
+
+
+                    description.textContent =
+                        product.description;
+
+
+                    button.href =
+                        product.canva;
+
+
+                    document.title =
+                        "ZAVMERIN | " +
+                        product.title;
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
